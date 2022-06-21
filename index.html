@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Verdana,  sans-serif;
+            }
+            .mySlides{
+                display: none;
+            }
+            .heading {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+                background: url("sign.jpg");
+            }
+            .banner{
+                background: url("sign.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                box-shadow: rgba(0,0,0.0.5) 0 0 0 1000000px inset;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                flex-direction: column;
+            }
+            .navbar {
+                width: 100%;
+                background-color: cadetblue;
+                overflow:auto;
+                position:sticky;
+                top:10px;
+                opacity:1;
+                z-index:30;
+            }
+
+            /* Navbar links */
+            .navbar a{
+                float: left;
+                text-align: center;
+                padding: 12px;
+                color:black;
+                text-decoration: navy;
+                font-size: 20px;
+            }
+/*Navibar links on mouse-over*/ 
+.navbar a:hover{
+    background-color: burlywood;
+}
+
+/*current/active navbar link*/
+a.active{
+    background-color: brown;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less then 500 pixel*/
+@media screen and (max-width:500px){
+.navbar a {
+    float:none;
+    display:block;
+}
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-token" content="wec4wzJfv9fHPRgeQrrnsVoPUU88Y1yctvfkB6X5">
+	<title>Tusiime Schools | Best school Dar es Salaam | Tanzania | Education is Panacea</title>
+	<meta name="keywords" content="Tusiime Schools, Tusiime Primary School, Tusiime Secondary School, Tusiime High School, Tusiime Nursery SchoolBest schools Dar es Salaam , Best School Tanzania, Best Primary School Dar es Salaam Tanzania, Best Secondary School Dar es Salaam Tanzania, Best High School Dar es Salaam Tanzania, Best Nursery School Dar es Salaam Tanzania">
+	<meta name="description" content="Tusiime Schools is a community of approximately three thousand student from Tusiime Nursery school, Tusiime Primary School, Tusiime Secondary School and Tusiime High School.">
+	<link rel="canonical" href="https://tusiimeschool.ac.tz"/>
+
+</head>
+<body>
+    <div class="heading">
+        <div class="logo">
+        <img alt="logo" src="panacea.jpg" width="80" >
+        </div>
+        <h1 style="text-align:center;color:aqua (0,255,0,0.9);float:left;">TUSIIME SECONDARY SCHOOL.</h1>
+        </div>
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="educaionalform.html">Register</a>
+        <a href="Alu.html">Alumni</a>
+        <a href="staffs.html">Staff</a>
+        <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="banner">
+            <h2>TUSIIME SECONDARY SCHOOL </h2>
+            <p><i><b>"EDUCATION IS A PANACEA"</b></i></p>
+            </div>
+    
+</body>
+</html>

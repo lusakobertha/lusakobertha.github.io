@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Verdana,sans-serif;
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .myslides{
+                display: none;
+            }
+            .heading{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+            }
+            .banner{
+                background: url("about.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                box-shadow: rgba(192, 191, 191, 0.5) 0 0 0 1000000px inset;
+                display:flex;
+                flex-wrap: wrap;
+                text-align: center;
+                flex-direction: column;
+            }
+            .navbar{
+                width: 100%;
+                background-color: darkblue;
+                overflow: auto;
+                position: sticky;
+                top: 10px;
+                opacity: 1;
+                z-index: 30;
+            }
+
+            /*Navbar links */
+            .navbar a{
+                float: left;
+                text-align: center;
+                padding: 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 19px;
+            }
+            /*Navbar links on mouse-over*/ 
+            .navbar a:hover { 
+                background-color: green;
+            }
+            /*current/active navbar link*/ 
+            a.active{
+                background-color: black;
+            }
+
+            /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less then 500 pixel*/
+            @media screen and (max-width:500px) {
+                .navbar a {
+                    float: none;
+                    display: block;
+              }
+            }
+            </style>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            </head>
+            <body>
+                <div class="heading">
+                    <div class="logo">
+                    <img alt="logo" src="panacea.jpg" width="80" >
+                    </div>
+                    <h1 style="text-align:center;color:aqua (0,255,0,0.9);float:left;">TUSIIME SECONDARY SCHOOL.</h1>
+                    </div>
+                    <div class="navbar">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="educaionalform.html">Register</a>
+                        <a href="Alu.html">Alumni</a>
+                        <a href="staffs.html">Staff</a>
+                        <a class="active" href="">Contacts</a>
+                        </div>
+                        
+                        <div class="contact-info mb-15 md-mb-30">
+							<div class="icon-part">
+								<i class="fa fa-envelope-open-o"></i>
+							</div>
+							<div class="content-part">
+								<h3 class="info-subtitle">Email Address</h3>
+								<h3 class="">
+									<a href="mailto:info@tusiimeschool.com">info@tusiimeschool.com</a>
+								</h3>
+							</div>
+						</div>
+						<div class="contact-info">
+							<div class="icon-part">
+								<i class="fa fa-headphones"></i>
+							</div>
+							<div class="content-part">
+								<h3 class="info-subtitle">Phone Number</h3>
+								<h5 class="">
+									<h3>(+255) 022 280 7780</h3>
+								</h5>
+							</div>
+				<div class="col-lg-8" id="app">
+					<contact-form></contact-form>
+				</div>
+			</div>
+            <div class="row align-items-end contact-bg1">
+				<div class="col-lg-12 lg-pl-0">
+					<div class="contact-map">
+						<iframe src="https://maps.google.com/maps?q=Tusiime%20Secondary%20School&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+					</div>
+				</div>
+			</div>
+                <footer id="rs-footer" class="rs-footer home9-style main-home">
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 col-sm-12 footer-widget md-mb-50">
+                                    <div class="footer-logo mb-30 d-flex">
+                                    </div>
+                                    <ul class="footer_social">
+                                        <li>
+                                            <a href="https://facebook.com/Tusiime.School" target="_blank">
+                                                <span><i class="fa fa-facebook"></i></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com/tusiime_schools" target="_blank">
+                                                <span><i class="fa fa-instagram"></i></span>
+                                            </a>
+                                <div class="col-lg-4 col-md-12 col-sm-12 footer-widget md-mb-50">
+                                    <h3 class="widget-title">Address</h3>
+                                    <ul class="address-widget">
+                                        <li>
+                                            <i class="flaticon-location"></i>
+                                            <div class="desc"> Plot 47, Tabata Industrial Area, Ilala, Dar es Salaam</div>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-call"></i>
+                                            <div class="desc">
+                                                <a href="tel:+255222807780"> (+255) 022 280 7780</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-email"></i>
+                                            <div class="desc">
+                                                <a href="mailto:info@tusiimeschool.com">info@tusiimeschool.com</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Verdana,sans-serif;
+            }
+            .myslides{
+                display: none;
+            }
+            .heading{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+                background: url("sign.jpg");
+            }
+            .banner{
+                background: url("about.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                box-shadow: rgba(192, 191, 191, 0.5) 0 0 0 1000000px inset;
+                display:flex;
+                flex-wrap: wrap;
+                text-align: center;
+                flex-direction: column;
+            }
+            .navbar{
+                width: 100%;
+                background-color: darkblue;
+                overflow: auto;
+                position: sticky;
+                top: 10px;
+                opacity: 1;
+                z-index: 30;
+            }
+
+            /*Navbar links */
+            .navbar a{
+                float: left;
+                text-align: center;
+                padding: 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 19px;
+            }
+            /*Navbar links on mouse-over*/ 
+            .navbar a:hover { 
+                background-color: green;
+            }
+            /*current/active navbar link*/ 
+            a.active{
+                background-color: black;
+            }
+
+            /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less then 500 pixel*/
+            @media screen and (max-width:500px) {
+                .navbar a {
+                    float: none;
+                    display: block;
+              }
+            }
+            </style>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            </head>
+            <body>
+                <div class="heading">
+                    <div class="logo">
+                    <img alt="logo" src="panacea.jpg" width="80" >
+                    </div>
+                    <h1 style="text-align:center;color:aqua (0,255,0,0.9);float:left;">TUSIIME SECONDARY SCHOOL.</h1>
+                    </div>
+                    <div class="navbar">
+                        <a href="index.html">Home</a>
+                        <a class="active" href="">About</a>
+                        <a href="educaionalform.html">Register</a>
+                        <a href="Alu.html">Alumni</a>
+                        <a href="staffs.html">Staff</a>
+                        <a href="contacts.html">Contacts</a>
+                        </div>
+                        <div class="banner">
+                            <h2>ABOUT US</h2>
+                            <p><i><b>"WELCOME TO TUSIIME SECONDARY SCHOOL"</b></i></p>
+                            </div>
+                            <div>
+                                <h3>HISTORICAL BACKGROUND</h3>
+                                Tusiime School was founded in 1998 from private and parent’s initiatives, interest and influence. It started as a mere private Nursery & Prep school of 5 students. From 1999, Tusiime was patiently molded into a large and sophisticated primary school with full accreditation from the Tanzania Ministry of Education in 2002.Tusiime Secondary School is situated just 8km from the city center. It’s on a 15 acre piece of land at Plot 47 Ky Tabata Segerea- Ilala District, Dar es Salaam it has an extensive playing fields and recreational areas. 
+Since then, Tusiime Schools quickly established their academic credentials and have been gradually expanding and they have now reached an enrolment of about 3000 students in total for Nursery, Primary, Secondary and High school.
+
+</div>
+<div>
+    <h3>EDUCATION LEVEL</h3>
+    Tusiime secondary school consists of Nursery,primary also both Olevel and Alevel, Tusiime is a boarding school which consists of 
+    both girls and boys.It uses NECTA form school.
+
+    <h3>CURRICULUM</h3>
+        <p>The heartbeat of the school is a broad curriculum which stretches the brightest, includes
+            ‘hard’ subjects and is focused on preparing students for a brilliant future.</p>
+        <p>Tusiime Secondary School curriculum is broad and diverse, enjoyable and fast in pace. There
+            is support and challenge for all students, and the secondary school is a time in which
+            students take increasing responsibility for their own study and progress. Students have the
+            opportunity to choose optional subjects to go alongside the compulsory NECTA subjects listed
+            below, firstly in Form Two Exams, and then for Form IV Exams.</p>
+        <p>In Form III, all students study the seven core subjects shown in the table below. They choose
+            a further three optional subjects</p>
+            <p>The table below shows the main subjects in the curriculum for Form I – Form IV</p>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Compulsory NECTA subjects</th>
+
+                    <th>Optional NECTA subjects</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>English</td>
+                         <td>Commerce</td>
+                </tr>
+                <tr>
+                <td>Kiswahili</td>
+                        <td>Book keeping</td>
+                </tr>
+                <tr>
+                 <td>Civics</td>
+                         <td>French</td>
+                </tr>
+                <tr>
+                <td>Mathematics</td>
+                     <td>Additional Mathematics</td>
+                </tr>
+                <tr>
+                 <td>Geography</td>
+                     <td>Information and Computer Studies</td>
+                </tr>
+                <tr>
+                    <td>Biology</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Chemistry</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>History</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+
+
+    <h3>STAFF MEMBERS AND SUBJECTS</h3>
+    It consist of more 100 staff members which are teachers and other workers.
+    </div>
+    <h2 class="title mb-40">VISION</h2>
+                        <p>To be a quality education provider with high academic standards.</p>
+                    <div class="blog-desc">
+                        <p>
+                            Tusiime School Provides high quality education and it has been the best school in Dar es
+                            Salaam and receiving Different awards for academic achievement. It has approximately 3000
+                            students from different family and cultural heritages. Tusiime does not just go for
+                            “special” children who have already shown their academic potential but we believe every
+                            child is special, and through professional strategies, hard work and effort we can make them
+                            achieve the highest honors in Tanzania education. We want our students to feel ready to take
+                            on whatever challenges lie ahead and able to make a positive difference to whichever
+                            community they finds themselves in throughout their life. Whilst we aim to help each boy and
+                            girl to achieve their full academic potential and enjoy that process, we also emphasize the
+                            importance of spiritual growth and of developing as a person, most particularly in
+                            confidence, compassion and courage. We want to encourage each pupil to develop as an
+                            individual as well as a responsible and caring member of society.
+                        </p>
+                        <h2 class="title mb-40">MISSION</h2>
+                        <p>To create disseminate and develop skills and attitudes that meet labor market and
+                            develop challenges locally and globally.</p>
+
+                       
+    
+    </body>
+    </html>
+

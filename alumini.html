@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Verdana,sans-serif;
+            }
+            .myslides{
+                display: none;
+            }
+            .heading{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+            }
+            .banner{
+                background: url("about.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                box-shadow: rgba(192, 191, 191, 0.5) 0 0 0 1000000px inset;
+                display:flex;
+                flex-wrap: wrap;
+                text-align: center;
+                flex-direction: column;
+            }    
+
+.navbar{
+    width: 100%;
+    background-color: darkblue;
+    overflow: auto;
+    position: sticky;
+    top: 10px;
+    opacity: 1;
+    z-index: 30;
+}
+
+/*Navbar links */
+.navbar a{
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+/*Navbar links on mouse-over*/ 
+.navbar a:hover { 
+    background-color:black
+}
+/*current/active navbar link*/ 
+a.active{
+    background-color:antiquewhite;
+}
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+.navbar a {
+float: none;
+display: block;
+}
+}
+
+
+
+form{
+border:2px solid black;
+margin: 25px 400px 75px 400px;
+align:center;
+color:black;
+padding-left:20px;
+background-color:rgba(191, 192, 192, 0.795);
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(192, 192, 191);
+  border-radius: 6px;
+  box-sizing: border-box;
+  }
+   .star{
+  width:100%;
+  background-color:black;
+  overflow:auto;
+  position:sticky;
+  top:0px;
+  z-index:5;
+  }
+  .star a{
+  float:left;
+  text-align:center;
+  padding:12px;
+  color:white;
+  text-decoration:none;
+  font-size:17px;
+  }
+  .star a:hover{
+  background-color:lightgoldenrodyellow;
+  }
+  .active{
+  background-color:blue;
+  }
+  
+ .reg{
+text-align:center;
+color:black;
+}
+ 
+   
+  body{
+  background-color:lightskyblue;
+  
+  }
+  
+</style>
+</head>
+<body>
+    <div class="heading">
+        <div class="logo">
+        <img alt="logo" src="panacea.jpg" width="80" >
+        </div>
+        <h1 style="text-align:center;color:aqua (0,255,0,0.9);float:left;">TUSIIME SECONDARY SCHOOL.</h1>
+        </div>
+    <div class="navbar">
+ <a href="pratical.html" >Home</a>
+<a href="about.html"  >About </a>
+ <a href="register.html" >Register</a>
+<a href="Alu.html" class="active">Alumni</a>
+ <a href="staffs.html">Staff</a>
+  <a href="contacts.html">Contacts</a>
+</div>
+</head>
+         <body>
+        <h1 class="reg">ALUMNI REGISTRATION FORM </FORM></h1>
+                            <form action="alump.php" name="form" onsubmit="return fformvalidation()" method="post" >
+                            <div class="starboy1">
+                            <label>Full name</label><br>
+                            
+                            <input type="text" name="fullnames" id="fullname" placeholder="full names"><br>
+                            </div>
+                            <div class="starboy2">
+                            <label>Year of enrolment</label><br>
+                            <input type="month" name="yoe" id="yoe"><br>
+                            </div>
+                            <div class="starboy3">
+                            <label>Year of graduation</label><br>
+                            <input type="month" name="yog" id="yog"><br>
+                            </div>
+                            <label>Head master during Enroment</label><br>
+                            <input type="text" name="master" id="master"><br>
+                            <label>Head master during Graduation</label><br>
+                            <input type="text" name="master2" id="master2"><br>
+                            <label>Famous teacher during Graduation</label><br>
+                            <input type="text" name="teacher" id="teacher"><br>
+                            <label>Select your Division</label><br>
+                            <input type="radio" name="division"value="division 1">
+                            <label >Division 1</label>
+                            <input type="radio" name="division"value="ivision 2">
+                            <label >Division 2</label>
+                            <input type="radio" name="division" value="division 3">
+                            <label >Division 3</label>
+                            <input type="radio" name="division" value="division 4 ">
+                            <label >Division 4</label>
+                            <input type="radio" name="division" value="division 0">
+                            <lable >Division 0</lable>
+                            
+                            
+                            <label>Occupation</label><br>
+                            <select name="fred" id="fred"><br>
+                            <option value="q0"></option><br>
+                            <option value="q1">teacher</option><br>
+                            <option value="q2">doctor</option><br>
+                            <option value="q4">engineer</option><br>
+                            <option value="q5">others</option><br>
+                            </select><br>
+                            
+                            <label>Address</label><br>
+                            <input type="text" name="add" id="add" placeholder="Enter address"><br><br>
+                            <label>Email</label><br>
+                            <input type="text" name="address2" id="address2" placeholder="Email address"><br><br>
+                            <label>phone number</label><br>
+                            <input type="text" name="phone" id="phone" placeholder="phone number"><br><br>
+                            
+                            <label for="submit">submit </label>
+                            <input type="submit"name="sbutton"id="sbutton"value="submit">
+                            <label for="reset">reset </label>
+                            <input type="reset"name="rbutton"id="rbutton"value="reset">
+                            </form>
+                            </div>
+                            </body>
+                            </html>            
+            

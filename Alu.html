@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alumni</title>
+    <style>
+      html,
+      body {
+        min-height: 100%;
+      }
+      body,
+      div,
+      form,
+      input,
+      select,
+      p {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 16px;
+        color: #eee;
+      }
+      .myslides{
+                display: none;
+            }
+            .heading{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+                background: url("sign.jpg");
+            }
+            .banner{
+                background: url("about.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                box-shadow: rgba(192, 191, 191, 0.5) 0 0 0 1000000px inset;
+                display:flex;
+                flex-wrap: wrap;
+                text-align: center;
+                flex-direction: column;
+            }    
+
+            .navbar{
+                width: 100%;
+                background-color: darkblue;
+                overflow: auto;
+                position: sticky;
+                top: 10px;
+                opacity: 1;
+                z-index: 30;
+            }
+
+            /*Navbar links */
+            .navbar a{
+                            float: left;
+                            text-align: center;
+                            padding: 12px;
+                            color: white;
+                            text-decoration: none;
+                            font-size: 19px;
+                        }
+                        /*Navbar links on mouse-over*/ 
+                        .navbar a:hover { 
+                            background-color:black
+                        }
+                        /*current/active navbar link*/ 
+                        a.active{
+                            background-color:lightseagreen;
+                        }
+
+
+            /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+            @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+                }
+            }
+      body {
+            background: url("sign.jpg")
+          no-repeat center;
+        background-size: cover;
+      }
+      h1,
+      h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+      h2 {
+        margin: 0 0 0 8px;
+      }
+      .main-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 25px;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .left-part,
+      form {
+        padding: 25px;
+      }
+      .left-part {
+        text-align: center;
+      }
+      .fa-graduation-cap {
+        font-size: 72px;
+      }
+      form {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 25px;
+        border-radius: 10px;
+        margin-left: 400px;
+        margin-right: 400px;
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+      }
+      input,
+      select {
+        padding: 5px;
+        margin-bottom: 30px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+        color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .btn-item,
+      button {
+        padding: 10px 5px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: none;
+        background: #26a9e0;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+      }
+      .btn-item {
+        display: inline-block;
+        margin: 20px 5px 0;
+      }
+      button {
+        width: 100%;
+      }
+      button:hover,
+      .btn-item:hover {
+        background: #85d6de;
+      }
+      @media (min-width: 568px) {
+        form {
+            width: 40%; 
+            height: auto;
+        }
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    <div class="heading">
+        <div class="logo">
+            <img alt="logo" src="panacea.jpg" width="80" >
+        </div>
+            <h1 style="text-align:center;color:aqua (0,255,0,0.9);float:left;">TUSIIME SECONDARY SCHOOL.</h1>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="educaionalform.html">Register</a>
+            <a class="active" href="">Alumni</a>
+            <a href="staffs.html">Staff</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+    <div class="main-block">
+      <form action="connecti.php" method="post">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i>
+          <h2>ALUMNI REGISTRATION FORM</h2>
+        </div>
+        <div class="info">
+            <label>Full name</label>
+            <input
+            class="fname"
+            type="text"
+            name="fullName"
+            placeholder="Enter Full name"
+            />
+            <label>Year of Enrollment</label>
+            <input type="month" name="enrollYear" id="yog" placeholder="" />
+            <label>Year of Graduation</label>
+            <input type="month" name="gradYear" id="yog" placeholder="Year of Graduation" />
+            <label>Head master during Enroment</label>
+            <input type="text" name="enrollHead" placeholder="Enter name" />
+            <label>Head master during Graduation</label>
+            <input type="text" name="gradHead" placeholder="Enter name" />
+            <select name="division">
+                <option value="" selected>Select your Division</option>
+                <option value="division 1">Division 1</option>
+                <option value="division 2">Division 2</option>
+                <option value="division 3">Division 3</option>
+                <option value="division 4">Division 4</option>
+                <option value="division 0">Division 0</option>
+            </select>
+            <select name="occupation">
+                <option value="" selected>Select your Occupation</option>
+                <option value="occupation"></option>
+                <option value="teacher">teacher</option>
+                <option value="doctor">doctor</option>
+                <option value="engineer">engineer</option>
+                <option value="others">others</option>
+            </select>
+            <label>Address</label>
+            <input type="text" name="address" id="add" placeholder="Enter address"><br>
+            <label>Email</label>
+            <input type="text" name="email" id="address2" placeholder="Enter Email address"><br>
+            <label>phone number</label>
+            <input type="text" name="phoneNumber" id="phone" placeholder="Enter phone number">
+
+        </div>
+        <button type="submit" href="/">Submit</button>
+        <button type="reset" href="/">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
